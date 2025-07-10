@@ -1,0 +1,99 @@
+/* fondo verde pastel */
+.page-background {
+  background: #DFF5E1;
+  min-height: 100vh;
+  padding: 2rem 1rem 1rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+/* botón regresar */
+.btn-back {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background-color: #1B332B;
+  color: #DFF5E1;
+  border: 2px solid #1B332B;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* recuadro del formulario */
+.form-wrapper {
+  background: #1B332B;
+  padding: 32px 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 480px;
+  color: #fff;
+  margin-top: 2rem;
+}
+
+/* grid de inputs */
+.form-grid {
+  display: grid;
+  gap: 16px;
+}
+
+/* inputs y select */
+input, select {
+  margin-top: 6px;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+/* botón registrar */
+.btn-primary {
+  width: 100%;
+  padding: 12px;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 8px;
+  transition: background 0.25s;
+}
+.btn-primary:hover {
+  background: #1e4fd1;
+}
+
+/* mensaje */
+.msg {
+  margin-top: 16px;
+  font-weight: 600;
+  color: #10b981;
+}
+/* Asegura que cada label esté en su propio bloque */
+.form-grid label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+/* Campos de texto y select a ancho completo */
+.form-grid input,
+.form-grid select {
+  width: 100%;
+  box-sizing: border-box;   /* para que el padding no rompa el ancho */
+}
+
+/* Espacio vertical extra entre filas del form */
+.form-grid {
+  display: grid;
+  grid-row-gap: 16px;
+  grid-template-columns: 1fr; /* una sola columna */
+}
+
+/* Ajusta el botón de enviar para que también llene el ancho */
+.btn-primary {
+  width: 100%;
+}
